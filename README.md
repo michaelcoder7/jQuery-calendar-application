@@ -1,1 +1,1 @@
-# jQuery-calendar-application
+# week-5-jQuery-calendar-application
