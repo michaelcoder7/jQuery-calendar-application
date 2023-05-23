@@ -46,3 +46,20 @@ function generateTimeslots() {
     $(".container").append(html);
   }
 }
+
+function init() {
+  generateTimeslots();
+
+  updateTimeslots();
+
+  $(".saveBtn").on("click", onSaveTask);
+
+  const currentDay = dayjs().format("dddd MMMM dd YYY, h:mm:ss a");
+  $("#currentDay").text(currentDay);
+
+  setInterval(function () {
+    updateTimeslots();
+  }, 10000);
+}
+
+init();
