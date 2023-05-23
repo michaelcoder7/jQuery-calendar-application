@@ -31,5 +31,18 @@ function onSaveTask(event) {
 }
 
 function generateTimeslots() {
-  for (hour = options.firstHour; hour <= options.lastHour; hour++) {}
+  for (hour = options.firstHour; hour <= options.lastHour; hour++) {
+    const savedTask = localStorage.getItem(hour) || "";
+    const html = `<div class="row" data-hour="${hour}">
+           <div class="col-sm-2 hour">${hour}</div>
+           <div class="col-sm-8 row past">
+                <textarea class="col-md-10 description">${savedTask}</textarea>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary saveBtn">Save</button>
+            </div>
+          </div>          
+        `;
+    $(".container").append(html);
+  }
 }
