@@ -7,7 +7,10 @@ const options = {
 // To generate timeslots
 function generateTimeslots() {
   for (hour = options.firstHour; hour <= options.lastHour; hour++) {
+    //loads the task from local storage
     let savedTask = localStorage.getItem(hour) || "";
+    //dynamically creates time block rows
+
     let html = `<div class="row time-block" data-hour="${hour}">
            <div class="col-sm-2 hour">${hour}</div>
            <div class="col-sm-8 row past">
@@ -47,7 +50,7 @@ function onSaveTask(event) {
 
   localStorage.setItem(hour, task);
 
-  console.log("saved");
+  console.log("saved-tasks");
 }
 
 function init() {
