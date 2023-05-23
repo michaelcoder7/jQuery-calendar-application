@@ -37,3 +37,9 @@ Accompanying JS file which contains the jQuery code created from scratch and imp
 The timeblocks are dynamically created and inserted into the html file
 
 ## Screenshot of calendar application
+
+<img width="1254" alt="work-day-scheduler" src="https://github.com/michaelcoder7/week-5-jQuery-calendar-application/assets/128432461/85d740b6-a883-47b3-8087-b2f3f02e4ba0">
+
+## Link to Deployed Website
+
+https://michaelcoder7.github.io/week-5-jQuery-calendar-application/
