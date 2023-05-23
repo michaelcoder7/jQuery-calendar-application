@@ -25,3 +25,15 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
+
+## Activities carried out
+
+Main html file was edited in order for the container in the div tag to be created dynamically in the JS file
+
+Accompanying CSS file was also edited inorder to have black text as opposed to the white preset colour
+
+Accompanying JS file which contains the jQuery code created from scratch and implemented into the html file using jQuery
+
+The timeblocks are dynamically created and inserted into the html file
+
+## Screenshot of calendar application
