@@ -57,11 +57,11 @@ function init() {
   //To update the timeslot's background colours based on time of day
   updateTimeslots();
 
-  //To setup save button
+  //To setup save button using jQuery
   $(".saveBtn").on("click", onSaveTask);
 
-  //To show current day and time
-  const currentDay = dayjs().format("dddd MMMM YYYY, h:mm:ss a");
+  //To setup current day and time using 24 hour clock
+  const currentDay = dayjs().format("dddd MMMM YYYY, HH:mm:ss ");
   $("#currentDay").text(currentDay);
 
   setInterval(function () {
